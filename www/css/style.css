@@ -1,1 +1,33 @@
-/* Empty. Add your own CSS if you like */
+.btn {
+  padding: 10px 20px;
+  background: #16a085;
+  color: #ffffff;
+  text-decoration: none !important;
+  margin: 10px 0;
+  border: 0;
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #111111;
+}
+
+p {
+  font-size: 12px;
+  color: #333333;
+}
+
+#link {
+  margin: 10px;
+  padding: 10px;
+  background: #eeeeee;
+}
