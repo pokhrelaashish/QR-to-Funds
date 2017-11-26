@@ -1,72 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
-
-    <link rel="manifest" href="manifest.json">
-
-    <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
-
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
-    <script>
-      function htmlEncode (value) {
-        return $('<div/>').text(value).html();
-      }
-
-      function generateQR () {
-        console.log("here");
-        console.log("https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#link").val()) + "&chs=160");
-          $(".qr").attr(
-            "src",
-            "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#link").val()) + "&chs=160"
-          );
-          console.log("past");
-      }
-    </script>
-  </head>
-<body>
-  <ion-content>
-    <div class="wrapper">
-      <img src="qr.png">
-      <h1>Create a New QR Code</h1>
-      <p>What should your QR code link to?</p>
-      Enter Link Below: <br>
-      <input type="text" id="link"/>
-      <button class="btn" onclick="generateQR()">Generate QR Code</button>
-      <div>
-        <p>See your generated QR code below</p>
-        <img class="qr"/>
-      </div>
+<ion-view>
+  <div class="wrapper">
+    <img src="qr.png">
+    <h1>Create a New QR Code</h1>
+    <p>What should your QR code link to?</p>
+    Enter Link Below: <br>
+    <input type="text" id="link"/>
+    <button class="btn" onclick="generateQR()">Generate QR Code</button>
+    <div>
+      <p>See your generated QR code below</p>
+      <img class="qr"/>
     </div>
-  </ion-content>
-</body>
-</html>
+    <a class="button icon-left ion-home" href="#/">Go back!</a>
+  </div>
+</ion-view>
