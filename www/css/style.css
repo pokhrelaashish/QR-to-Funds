@@ -14,6 +14,11 @@
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  height: 100%;
+}
+
+.wrapper a {
+  font-size: 14px;
 }
 
 h1 {
@@ -30,4 +35,18 @@ p {
   margin: 10px;
   padding: 10px;
   background: #eeeeee;
+  text-align: center;
+}
+
+.qr-code {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
 }

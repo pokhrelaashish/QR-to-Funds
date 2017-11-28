@@ -11,6 +11,8 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    <!-- Routing -->
+    <script src="js/angular-ui-router.js"></script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script
@@ -23,21 +25,6 @@
     <script src="./js/ng-cordova.min.js"></script>
   </head>
   <body ng-app="starter">
-    <div ng-controller="MainCtrl">
-      <ion-nav-view animation="slide-left-right"></ion-nav-view>
-    </div>
-    <ion-view>
-      <div class="wrapper">
-        <img src="qr.png">
-        <h1 class="Welcome">Welcome!</h1>
-        <br>
-        <p>Begin by scanning a QR code or creating one.</p>
-        <br>
-        <a class="btn" href="#/scan">Scan QR Code</a>
-        <a class="btn" href="#/generate">Create New QR Code</a>
-        <br>
-        <p>Not what you expected?</p>&emsp;<a href="#">Learn More</a>
-      </div>
-    </ion-view>
+    <ui-view></ui-view>
   </body>
 </html>
